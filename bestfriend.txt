@@ -1,0 +1,17 @@
+best_friend = ["Muli"]
+best_friend_lower = [bestie.lower() for bestie in best_friend]
+whoIsYourBestFriend = input("Who is your best friend: ")
+
+while True:
+  if whoIsYourBestFriend.lower() in best_friend_lower:
+    print(f"That's right, {best_friend[0]} is your best friend.")
+    break
+  else:
+    print("You are not the right user, you can try one more time.")
+    whoIsYourBestFriend = input("Who is your best friend: ")
+    if whoIsYourBestFriend.lower() != best_friend_lower:
+      print("You're not the right user")
+      break
+    else:
+      print(f"That's right, {best_friend[0]} is your best friend.")
+      break

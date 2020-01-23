@@ -1,0 +1,22 @@
+operations = {
+  "average": lambda seq: sum(seq) / len(seq),
+  "total": sum,
+  "top": max
+}
+
+students = [
+  {"name": "Arjanit", "grades":(4, 5, 3, 4, 5)},
+  {"name": "Flamur", "grades":(3, 4, 3, 4, 5)},
+  {"name": "Shkelzen", "grades":(3, 3, 2, 4, 5)},
+]
+
+for student in students:
+  name = student["name"]
+  grades = student["grades"]
+
+  print(f"Student: {name}")
+  operation = input("Enter 'average', 'total' or 'top': ")
+
+  result = operations[operation](grades)
+  print(result)
+

@@ -1,0 +1,11 @@
+car = input("What car do you have: ")
+mileage = int(input("How many mileage does your car have: "))
+fuel_consumed = int(input("How much fuel has your car consumed: "))
+
+def calculate_mpg():
+  mpg = mileage / fuel_consumed
+  print(f"Your {car} does {mpg} miles per gallon")
+
+calculate_mpg()
+
+  

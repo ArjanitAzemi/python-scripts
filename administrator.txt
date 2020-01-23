@@ -1,0 +1,2 @@
+1. Run "Command Prompt" as Administrator
+2. Type "net user administrator /active:yes"
